@@ -5,7 +5,7 @@
 
   // ---------- Links de la sesión de consultoría ----------
   // Pegá acá tus links. Mientras estén vacíos, los botones abren WhatsApp.
-  var LINK_PAGO_MP = '';   // ej: 'https://mpago.la/XXXXXX'
+  var LINK_PAGO_MP = 'https://mpago.la/24FvuCF';   // Mercado Pago · Sesión SALT $40.000
   var LINK_AGENDA  = 'https://calendar.app.google/4FckD9eohae8ZFkYA';   // Google Calendar · Sesión SALT 60 min
 
   // ---------- Tracking (Meta Pixel / GA4 si están instalados) ----------
