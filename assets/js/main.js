@@ -3,6 +3,11 @@
 
   var WHATSAPP = '5493512166870';
 
+  // ---------- Links de la sesión de consultoría ----------
+  // Pegá acá tus links. Mientras estén vacíos, los botones abren WhatsApp.
+  var LINK_PAGO_MP = '';   // ej: 'https://mpago.la/XXXXXX'
+  var LINK_AGENDA  = '';   // ej: 'https://cal.com/tu-usuario/consultoria'
+
   // ---------- Tracking (Meta Pixel / GA4 si están instalados) ----------
   function track(metaEvent, gaEvent, params) {
     try { if (typeof window.fbq === 'function') window.fbq('track', metaEvent, params || {}); } catch (e) {}
@@ -15,6 +20,19 @@
     var kind = el.getAttribute('data-track');
     if (kind === 'whatsapp') track('Contact', 'contact_whatsapp', { method: 'whatsapp' });
     if (kind === 'schedule') track('Schedule', 'click_diagnostico');
+    if (kind === 'checkout') track('InitiateCheckout', 'begin_checkout', { value: 40000, currency: 'ARS', content_name: 'Sesion consultoria SALT' });
+  });
+
+  // ---------- Botones de pago y agenda ----------
+  function waLink(text) { return 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(text); }
+  document.querySelectorAll('[data-pay]').forEach(function (btn) {
+    var isPay = btn.getAttribute('data-pay') === 'mp';
+    var url = isPay ? LINK_PAGO_MP : LINK_AGENDA;
+    btn.href = url || waLink(isPay
+      ? 'Hola Carlos, quiero reservar una sesión de consultoría. ¿Me pasás el link de pago?'
+      : 'Hola Carlos, ya pagué la sesión de consultoría y quiero elegir día y horario.');
+    btn.target = '_blank';
+    btn.rel = 'noopener';
   });
 
   // ---------- Menú mobile ----------
