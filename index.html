@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carlos Mansilla · Growth Manager | Meta Ads, CAPI y CRM</title>
+  <meta name="description" content="Growth Manager con más de 10 años en negocios digitales. Meta Ads, Conversions API, CRM y automatización para que tu publicidad se convierta en ventas medibles.">
+  <meta name="author" content="Carlos Mansilla">
+  <link rel="canonical" href="https://carlosmansilla.com.ar/">
+
+  <!-- Open Graph / redes -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Carlos Mansilla · Growth Manager">
+  <meta property="og:description" content="Publicidad, medición y CRM conectados en un solo sistema. Diagnóstico sin costo.">
+  <meta property="og:url" content="https://carlosmansilla.com.ar/">
+  <meta property="og:image" content="https://carlosmansilla.com.ar/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FF2D55'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-size='26' font-weight='900' text-anchor='middle' fill='%23fff'%3ECM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Carlos Mansilla",
+    "jobTitle": "Growth Manager",
+    "url": "https://carlosmansilla.com.ar/",
+    "email": "mailto:carlos.m.mansi@gmail.com",
+    "telephone": "+5493512166870",
+    "address": { "@type": "PostalAddress", "addressCountry": "AR" },
+    "sameAs": ["https://www.linkedin.com/in/carlosmansilla"],
+    "knowsAbout": ["Meta Ads", "Conversions API", "CRM", "Automatización", "Ecommerce", "Google Ads", "TikTok Ads"]
+  }
+  </script>
+
+  <!--
+    TRACKING: pegá acá tu Meta Pixel y Google Analytics 4.
+    Los eventos ya están disparados desde assets/js/main.js:
+      - Contact  → clic en cualquier botón de WhatsApp
+      - Lead     → envío del formulario de diagnóstico
+      - Schedule → clic en "Agendá tu diagnóstico"
+    main.js sólo los envía si fbq / gtag existen, así que no rompe nada mientras no estén.
+  -->
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a href="#top" class="brand" aria-label="Carlos Mansilla, inicio">
+        <span class="brand__mark">CM</span>
+        <span class="brand__text">Carlos Mansilla<small>Growth Performance</small></span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#casos">Casos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#contacto" class="btn btn--sm btn--primary" data-track="schedule">Agendá tu diagnóstico</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot"></span> Growth Manager · Meta Ads · CAPI · CRM</p>
+          <h1 class="hero__title">Tus anuncios no fallan solos. <em>Falla lo que pasa después del clic.</em></h1>
+          <p class="hero__lead">Soy Carlos Mansilla. Conecto publicidad, medición y seguimiento comercial en un solo sistema, para que sepas qué campaña te trae ventas reales y dejes de invertir a ciegas.</p>
+          <div class="hero__ctas">
+            <a href="#contacto" class="btn btn--primary" data-track="schedule">Quiero mi diagnóstico sin costo <span aria-hidden="true">→</span></a>
+            <a href="https://wa.me/5493512166870?text=Hola%20Carlos%2C%20vi%20tu%20web%20y%20quiero%20hablar%20sobre%20mi%20negocio." class="btn btn--ghost" target="_blank" rel="noopener" data-track="whatsapp">Escribime por WhatsApp</a>
+          </div>
+          <ul class="hero__proof">
+            <li><strong>+10 años</strong><span>en negocios digitales</span></li>
+            <li><strong>3 plataformas</strong><span>Meta · Google · TikTok</span></li>
+            <li><strong>LATAM</strong><span>Argentina y Panamá</span></li>
+          </ul>
+        </div>
+
+        <!-- Diagrama del sistema: el diferencial explicado en una imagen -->
+        <div class="system" aria-label="Cómo funciona un sistema de adquisición">
+          <div class="system__head">
+            <span class="mono">sistema_de_adquisicion</span>
+            <span class="system__live"><i></i> activo</span>
+          </div>
+          <ol class="system__flow">
+            <li><span class="step">01</span><div><b>Anuncio</b><small>Meta · Google · TikTok</small></div></li>
+            <li><span class="step">02</span><div><b>Landing / WhatsApp</b><small>Mensaje claro, fricción mínima</small></div></li>
+            <li><span class="step">03</span><div><b>CRM</b><small>Cada lead con estado y responsable</small></div></li>
+            <li class="is-key"><span class="step">04</span><div><b>Conversions API</b><small>La venta real vuelve a Meta</small></div></li>
+            <li><span class="step">05</span><div><b>Optimización</b><small>El algoritmo busca compradores, no curiosos</small></div></li>
+          </ol>
+          <p class="system__note">La mayoría de las agencias trabaja sólo el paso 01. Yo trabajo los cinco.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMA ============ -->
+    <section class="section" id="problema">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">El problema</p>
+          <h2>Casi nunca es falta de esfuerzo. <em>Es esfuerzo en el orden equivocado.</em></h2>
+        </header>
+        <div class="grid grid--4">
+          <article class="pain reveal">
+            <h3>“No sé si mi publicidad funciona”</h3>
+            <p>Invertís todos los meses, pero no podés decir qué campaña trae ventas y cuál sólo trae clics.</p>
+          </article>
+          <article class="pain reveal">
+            <h3>“Tengo leads, pero no cierro”</h3>
+            <p>Llegan consultas y se enfrían. No hay seguimiento, no hay CRM, no hay proceso comercial.</p>
+          </article>
+          <article class="pain reveal">
+            <h3>“Mi tienda no vende lo que debería”</h3>
+            <p>Hay tráfico y catálogo, pero la conversión y el ROAS no acompañan.</p>
+          </article>
+          <article class="pain reveal">
+            <h3>“Hago todo a mano”</h3>
+            <p>Planillas, mensajes sueltos y decisiones por intuición. Todo depende de vos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section section--alt" id="servicios">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">Servicios</p>
+          <h2>Qué hago, <em>en concreto</em></h2>
+          <p class="section__sub">Podés contratar una pieza o el sistema completo. Siempre arrancamos por el diagnóstico, para no gastar en lo que no hace falta.</p>
+        </header>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1Zm13-3a5 5 0 0 1 0 8m2.5-10.5a8.5 8.5 0 0 1 0 13"/></svg></div>
+            <h3>Performance Ads</h3>
+            <p>Estrategia, estructura y gestión de campañas en Meta, Google y TikTok. Prospección, remarketing y lead generation.</p>
+            <ul class="tags"><li>Meta Ads</li><li>Google Ads</li><li>TikTok Ads</li></ul>
+          </article>
+          <article class="card card--featured reveal">
+            <span class="badge">Mi diferencial</span>
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+            <h3>Medición y Conversions API</h3>
+            <p>Pixel + CAPI bien configurados, eventos limpios y deduplicados. Meta aprende de tus ventas reales, no de formularios basura.</p>
+            <ul class="tags"><li>Pixel</li><li>CAPI</li><li>Conversion Leads</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v4H4zM4 10h10v4H4zM4 15h6v4H4zm12 0 4 2-4 2z"/></svg></div>
+            <h3>CRM y automatización</h3>
+            <p>Del lead al cierre sin que nada se caiga: pipelines, respuestas por WhatsApp, avisos al equipo y estados que vuelven a la publicidad.</p>
+            <ul class="tags"><li>n8n</li><li>GoHighLevel</li><li>WhatsApp API</li><li>Apps Script</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 7h14l-1.5 10h-11zM9 7a3 3 0 0 1 6 0"/></svg></div>
+            <h3>Ecommerce</h3>
+            <p>Catálogo, feed, campañas de ventas, tracking de compra y recupero de carritos para que la tienda venda de forma estable.</p>
+            <ul class="tags"><li>Shopify</li><li>VTEX</li><li>WooCommerce</li><li>Tiendanube</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 9v11"/></svg></div>
+            <h3>Landings que convierten</h3>
+            <p>Páginas pensadas para un solo objetivo, rápidas y medibles desde el primer día. Con Landing24 las tenés listas en días.</p>
+            <ul class="tags"><li>Copy</li><li>CRO</li><li>Landing24</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10m6 10V4m6 16v-7m4 7H2"/></svg></div>
+            <h3>Reporting y decisiones</h3>
+            <p>Dashboards y reportes ejecutivos con CPA, ROAS, CAC y LTV. Números que entiende el dueño, no sólo el que hace los anuncios.</p>
+            <ul class="tags"><li>Dashboards</li><li>Atribución</li><li>KPIs</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASOS ============ -->
+    <section class="section" id="casos">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">Casos</p>
+          <h2>Proyectos reales, <em>problemas reales</em></h2>
+          <p class="section__sub">Algunos de los sistemas que armé. Por confidencialidad describo el rubro, no la marca.</p>
+        </header>
+
+        <div class="cases">
+          <!--
+            Para cada caso podés sumar un resultado medible dentro de .case__result, por ejemplo:
+            <p class="case__result"><strong>-38%</strong> costo por lead calificado en 60 días</p>
+            Es lo que más convence a un cliente nuevo.
+          -->
+          <article class="case reveal">
+            <div class="case__meta"><span>Real estate</span><span>Panamá</span></div>
+            <h3>Leads de compradores extranjeros que llegan calificados al equipo comercial</h3>
+            <div class="case__cols">
+              <div>
+                <h4>El desafío</h4>
+                <p>Desarrolladora inmobiliaria con campañas de captación internacional. Muchos formularios, poca información sobre cuáles terminaban en una venta.</p>
+              </div>
+              <div>
+                <h4>Qué construí</h4>
+                <ul class="checks">
+                  <li>Campañas de Lead Gen en Meta segmentadas a público extranjero</li>
+                  <li>Conversions API para optimizar por leads calificados, no por volumen</li>
+                  <li>Pipeline automático de formularios al CRM con estado de cada lead</li>
+                  <li>Primer contacto por WhatsApp automatizado (Cloud API)</li>
+                  <li>Dashboards de rendimiento y reportes ejecutivos de estrategia</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="case reveal">
+            <div class="case__meta"><span>Agencias y empresas</span><span>Integraciones</span></div>
+            <h3>Del CRM a Meta: la venta real como señal de optimización</h3>
+            <div class="case__cols">
+              <div>
+                <h4>El desafío</h4>
+                <p>Empresas con CRM propio cuyos datos de cierre nunca llegaban a la plataforma de anuncios. Meta optimizaba a ciegas.</p>
+              </div>
+              <div>
+                <h4>Qué construí</h4>
+                <ul class="checks">
+                  <li>Integraciones CRM → n8n → Meta Conversions API</li>
+                  <li>Middleware en Node.js para normalizar y deduplicar eventos</li>
+                  <li>Infraestructura propia en servidor dedicado, con mantenimiento mensual</li>
+                  <li>Documentación técnica para que el equipo del cliente la entienda</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <div class="cases__row">
+            <article class="case case--sm reveal">
+              <div class="case__meta"><span>Gastronomía</span><span>Panamá</span></div>
+              <h3>Restaurante con modelo de pago por resultados</h3>
+              <p>Onboarding completo: Business Manager, propuesta comercial, plantillas de WhatsApp y campañas locales para llenar mesas.</p>
+            </article>
+            <article class="case case--sm reveal">
+              <div class="case__meta"><span>Salud y estética</span><span>Media buying</span></div>
+              <h3>Media buying para clínicas estéticas</h3>
+              <p>Definición de parámetros de campaña y supervisión de ejecución asistida por IA en cuentas de Meta para múltiples clínicas.</p>
+            </article>
+            <article class="case case--sm reveal">
+              <div class="case__meta"><span>Servicios locales</span><span>Buenos Aires</span></div>
+              <h3>Análisis de demanda antes de invertir</h3>
+              <p>Estudio de mercado sobre más de 200 búsquedas reales para decidir dónde y con qué mensaje salir a pautar.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÉTODO ============ -->
+    <section class="section section--alt" id="metodo">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">Método SALT</p>
+          <h2>Primero diagnosticamos. <em>Después ejecutamos.</em></h2>
+          <p class="section__sub">Ningún proyecto empieza con anuncios. Empieza entendiendo dónde se pierde la plata.</p>
+        </header>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="steps__n">01</span>
+            <h3>Diagnóstico</h3>
+            <p>Una llamada de 30 a 45 minutos. Revisamos publicidad, conversión, datos, CRM y operación. Te vas con las prioridades claras, sigas o no conmigo.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n">02</span>
+            <h3>Implementación</h3>
+            <p>Armamos lo que falta en el orden que más impacta: medición, landing, CRM, campañas. Nada de tareas porque sí.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n">03</span>
+            <h3>Optimización</h3>
+            <p>Seguimiento semanal con números que importan. Escalamos lo que funciona y cortamos lo que no.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCIA ============ -->
+    <section class="section" id="experiencia">
+      <div class="wrap about">
+        <div class="about__photo reveal">
+          <!-- Subí tu foto a assets/img/carlos.jpg (cuadrada, mínimo 800×800). Si falta, se muestran tus iniciales. -->
+          <img src="assets/img/carlos.jpg" alt="Carlos Mansilla, Growth Manager" width="480" height="480" loading="lazy"
+               onerror="this.remove(); document.querySelector('.about__photo').classList.add('is-fallback');">
+          <span class="about__initials" aria-hidden="true">CM</span>
+        </div>
+        <div class="about__copy">
+          <p class="kicker">Sobre mí</p>
+          <h2>Un perfil híbrido: <em>growth, tecnología y operaciones</em></h2>
+          <p>No miro sólo las campañas. Miro el negocio completo: qué se vende, cómo se mide, cómo se opera y dónde se pierde plata. Por eso el diagnóstico es integral y no una auditoría de anuncios.</p>
+          <p>Vengo del marketing corporativo, lideré equipos multidisciplinarios y hoy combino media buying con desarrollo de integraciones y automatización.</p>
+
+          <ol class="timeline">
+            <li>
+              <h3>Consultor independiente de Growth</h3>
+              <p class="timeline__where">MCM Digital · Argentina y Panamá</p>
+              <p>Sistemas de adquisición completos para inmobiliarias, ecommerce, restaurantes y servicios: campañas, CAPI, CRM y automatización.</p>
+            </li>
+            <li>
+              <h3>Media Buyer</h3>
+              <p class="timeline__where">Biz Booster</p>
+              <p>Gestión de campañas de Meta para clínicas estéticas: estructura, presupuesto, audiencias y biblioteca creativa.</p>
+            </li>
+            <li>
+              <h3>Project Marketing Manager / Lead</h3>
+              <p class="timeline__where">Consultoría de servicios académicos</p>
+              <p>Liderazgo de Community Manager, Diseño, Desarrollo y SEO/SEM, con reporte a PMO.</p>
+            </li>
+            <li>
+              <h3>Marketing y Comunicación</h3>
+              <p class="timeline__where">Banco Galicia</p>
+              <p>Marketing en una de las principales entidades financieras del país.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="stack reveal">
+          <div class="stack__group">
+            <h3>Publicidad</h3>
+            <ul class="tags"><li>Meta Ads</li><li>Google Ads</li><li>TikTok Ads</li><li>Lead Gen</li><li>Catálogo / DPA</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3>Medición</h3>
+            <ul class="tags"><li>Pixel</li><li>Conversions API</li><li>GA4</li><li>Search Console</li><li>Atribución</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3>CRM y automatización</h3>
+            <ul class="tags"><li>n8n</li><li>GoHighLevel</li><li>WhatsApp Cloud API</li><li>Apps Script</li><li>Node.js</li><li>IA</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3>Ecommerce</h3>
+            <ul class="tags"><li>Shopify</li><li>VTEX</li><li>WooCommerce</li><li>Tiendanube</li><li>Mercado Libre</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARCAS ============ -->
+    <section class="section section--tight section--alt">
+      <div class="wrap">
+        <p class="kicker kicker--center">Proyectos que lidero</p>
+        <ul class="brands">
+          <li><b>MCM Digital</b><span>Consultoría de Growth</span></li>
+          <li><b>Landing24</b><span>Landings y webs listas en días</span></li>
+          <li><b>VALY</b><span>IA y automatización</span></li>
+          <li><b>Polaris</b><span>Mercado Libre y ecommerce</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="wrap faq">
+        <header class="section__head">
+          <p class="kicker">Preguntas frecuentes</p>
+          <h2>Antes de <em>agendar</em></h2>
+        </header>
+        <div class="faq__list">
+          <details>
+            <summary>¿El diagnóstico tiene costo?</summary>
+            <p>No. Es una llamada de 30 a 45 minutos donde revisamos tu situación y te llevás un plan de acción priorizado. Si después querés que lo implemente, te paso una propuesta. Si no, el plan es tuyo igual.</p>
+          </details>
+          <details>
+            <summary>¿Con qué tipo de negocios trabajás?</summary>
+            <p>Negocios que ya venden o ya invierten en publicidad y quieren ordenar el sistema: ecommerce, inmobiliarias, gastronomía, salud y estética, servicios profesionales y empresas B2B.</p>
+          </details>
+          <details>
+            <summary>¿Qué necesito tener para empezar?</summary>
+            <p>Acceso a tu cuenta publicitaria (si ya tenés) y claridad sobre qué vendés. Si no tenés Business Manager, píxel o CRM, lo armamos como parte del proceso.</p>
+          </details>
+          <details>
+            <summary>¿En cuánto tiempo se ven resultados?</summary>
+            <p>Los arreglos de medición y seguimiento se notan en las primeras semanas. El rendimiento de campañas necesita datos: en general entre 30 y 60 días para optimizar con criterio.</p>
+          </details>
+          <details>
+            <summary>¿Trabajás de forma remota?</summary>
+            <p>Sí. Trabajo con clientes de Argentina y del resto de Latinoamérica. Reuniones por videollamada y comunicación diaria por WhatsApp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section section--cta" id="contacto">
+      <div class="wrap contact">
+        <div class="contact__copy">
+          <p class="kicker">Último paso</p>
+          <h2>Agendá tu <em>diagnóstico</em></h2>
+          <p>Contame un poco de tu negocio y te respondo personalmente por WhatsApp para coordinar la llamada.</p>
+          <ul class="contact__links">
+            <li><a href="https://wa.me/5493512166870" target="_blank" rel="noopener" data-track="whatsapp"><span class="ci ci--wa" aria-hidden="true">WA</span><span><b>WhatsApp</b>+54 9 351 216 6870</span></a></li>
+            <li><a href="https://www.linkedin.com/in/carlosmansilla" target="_blank" rel="noopener"><span class="ci" aria-hidden="true">in</span><span><b>LinkedIn</b>/in/carlosmansilla</span></a></li>
+            <li><a href="mailto:carlos.m.mansi@gmail.com"><span class="ci" aria-hidden="true">@</span><span><b>Email</b>carlos.m.mansi@gmail.com</span></a></li>
+          </ul>
+        </div>
+
+        <form class="form" id="leadForm" novalidate>
+          <div class="form__row">
+            <label>Nombre<input name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre"></label>
+            <label>Negocio o marca<input name="negocio" type="text" required placeholder="Ej: Tienda de indumentaria"></label>
+          </div>
+          <div class="form__row">
+            <label>Rubro
+              <select name="rubro" required>
+                <option value="">Elegí una opción</option>
+                <option>Ecommerce</option>
+                <option>Inmobiliaria</option>
+                <option>Gastronomía</option>
+                <option>Salud y estética</option>
+                <option>Servicios profesionales</option>
+                <option>B2B / Industria</option>
+                <option>Otro</option>
+              </select>
+            </label>
+            <label>¿Invertís en publicidad hoy?
+              <select name="inversion" required>
+                <option value="">Elegí una opción</option>
+                <option>Todavía no</option>
+                <option>Menos de USD 300 / mes</option>
+                <option>USD 300 – 1.000 / mes</option>
+                <option>USD 1.000 – 5.000 / mes</option>
+                <option>Más de USD 5.000 / mes</option>
+              </select>
+            </label>
+          </div>
+          <label>¿Qué te gustaría resolver?<textarea name="mensaje" rows="4" required placeholder="Qué vendés, cómo vendés hoy y qué no está funcionando."></textarea></label>
+          <button type="submit" class="btn btn--primary btn--block">Enviar y coordinar por WhatsApp <span aria-hidden="true">→</span></button>
+          <p class="form__note" id="formNote">Se abre WhatsApp con tus datos cargados. No compartimos tu información.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p><b>Carlos Mansilla</b> · Growth Performance</p>
+      <p class="muted">© <span id="year">2026</span> · Argentina · Trabajo remoto para LATAM</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5493512166870?text=Hola%20Carlos%2C%20vi%20tu%20web." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-track="whatsapp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7a.6.6 0 0 0 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c0-.2-.3-.3-.7-.5Z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
