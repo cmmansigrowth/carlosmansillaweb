@@ -112,6 +112,42 @@
     });
   }
 
+  // ---------- Panel del hero: pausa la animación fuera de pantalla ----------
+  // ---------- Botón flotante: se oculta sobre el formulario de contacto ----------
+  if ('IntersectionObserver' in window) {
+    var system = document.querySelector('.system');
+    if (system) {
+      new IntersectionObserver(function (entries) {
+        system.classList.toggle('is-paused', !entries[0].isIntersecting);
+      }).observe(system);
+    }
+    // Barra mobile: visible después de los botones del hero y oculta sobre el formulario.
+    var waFloat = document.querySelector('.wa-float');
+    var mbar = document.getElementById('mbar');
+    var heroCtas = document.querySelector('.hero__ctas');
+    var contacto = document.getElementById('contacto');
+    var heroSeen = true, formSeen = false;
+    function syncBars() {
+      if (waFloat) waFloat.classList.toggle('is-hidden', formSeen);
+      if (mbar) mbar.classList.toggle('is-visible', !heroSeen && !formSeen);
+    }
+    if (contacto) {
+      new IntersectionObserver(function (entries) {
+        formSeen = entries[0].isIntersecting; syncBars();
+      }, { threshold: 0.15 }).observe(contacto);
+    }
+    if (heroCtas) {
+      new IntersectionObserver(function (entries) {
+        heroSeen = entries[0].isIntersecting; syncBars();
+      }).observe(heroCtas);
+    } else {
+      heroSeen = false;
+    }
+  } else {
+    var mb = document.getElementById('mbar');
+    if (mb) mb.classList.add('is-visible');
+  }
+
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();

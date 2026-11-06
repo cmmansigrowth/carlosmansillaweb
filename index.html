@@ -1,7 +1,8 @@
 <!doctype html>
-<html lang="es-AR">
+<html lang="es-AR" class="no-js">
 <head>
   <meta charset="utf-8">
+  <script>document.documentElement.className = 'js';</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Carlos Mansilla · Growth Manager | Meta Ads, CAPI y CRM</title>
   <meta name="description" content="Growth Manager con más de 10 años en negocios digitales. Meta Ads, Conversions API, CRM y automatización para que tu publicidad se convierta en ventas medibles.">
@@ -20,8 +21,9 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FF2D55'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-size='26' font-weight='900' text-anchor='middle' fill='%23fff'%3ECM%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,400..900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="theme-color" content="#09090b">
 
   <script type="application/ld+json">
   {
@@ -60,10 +62,10 @@
       <nav class="nav__links" id="navLinks" aria-label="Principal">
         <a href="#servicios">Servicios</a>
         <a href="#casos">Casos</a>
-        <a href="#consultoria">Consultoría</a>
         <a href="#experiencia">Experiencia</a>
+        <a href="#consultoria">Consultoría</a>
         <a href="#faq">Preguntas</a>
-        <a href="#contacto" class="btn btn--sm btn--primary" data-track="schedule">Agendá tu diagnóstico</a>
+        <a href="#contacto" class="btn btn--sm btn--primary" data-track="schedule">Pedí tu diagnóstico sin costo</a>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span>
@@ -93,11 +95,12 @@
         </div>
 
         <!-- Diagrama del sistema: el diferencial explicado en una imagen -->
-        <div class="system" aria-label="Cómo funciona un sistema de adquisición">
+        <div class="system" role="figure" aria-label="Cómo funciona un sistema de adquisición">
           <div class="system__head">
             <span class="mono">sistema_de_adquisicion</span>
             <span class="system__live"><i></i> activo</span>
           </div>
+          <div class="system__scope" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
           <ol class="system__flow">
             <li><span class="step">01</span><div><b>Anuncio</b><small>Meta · Google · TikTok</small></div></li>
             <li><span class="step">02</span><div><b>Landing / WhatsApp</b><small>Mensaje claro, fricción mínima</small></div></li>
@@ -222,6 +225,7 @@
                 </ul>
               </div>
             </div>
+            <!-- MÉTRICA: <p class="case__result"><strong>-00%</strong> qué mejoró y en cuánto tiempo</p> -->
           </article>
 
           <article class="case reveal">
@@ -242,6 +246,7 @@
                 </ul>
               </div>
             </div>
+            <!-- MÉTRICA: <p class="case__result"><strong>-00%</strong> qué mejoró y en cuánto tiempo</p> -->
           </article>
 
           <div class="cases__row">
@@ -249,16 +254,19 @@
               <div class="case__meta"><span>Gastronomía</span><span>Panamá</span></div>
               <h3>Restaurante con modelo de pago por resultados</h3>
               <p>Onboarding completo: Business Manager, propuesta comercial, plantillas de WhatsApp y campañas locales para llenar mesas.</p>
+              <!-- MÉTRICA: <p class="case__result"><strong>00</strong> qué mejoró</p> -->
             </article>
             <article class="case case--sm reveal">
               <div class="case__meta"><span>Salud y estética</span><span>Media buying</span></div>
               <h3>Media buying para clínicas estéticas</h3>
               <p>Definición de parámetros de campaña y supervisión de ejecución asistida por IA en cuentas de Meta para múltiples clínicas.</p>
+              <!-- MÉTRICA: <p class="case__result"><strong>00</strong> qué mejoró</p> -->
             </article>
             <article class="case case--sm reveal">
               <div class="case__meta"><span>Servicios locales</span><span>Buenos Aires</span></div>
               <h3>Análisis de demanda antes de invertir</h3>
               <p>Estudio de mercado sobre más de 200 búsquedas reales para decidir dónde y con qué mensaje salir a pautar.</p>
+              <!-- MÉTRICA: <p class="case__result"><strong>00</strong> qué mejoró</p> -->
             </article>
           </div>
         </div>
@@ -290,47 +298,6 @@
             <p>Seguimiento semanal con números que importan. Escalamos lo que funciona y cortamos lo que no.</p>
           </li>
         </ol>
-      </div>
-    </section>
-
-    <!-- ============ CONSULTORÍA / PRECIOS ============ -->
-    <section class="section" id="consultoria">
-      <div class="wrap">
-        <header class="section__head">
-          <p class="kicker">Cómo empezar</p>
-          <h2>Dos formas de <em>trabajar conmigo</em></h2>
-          <p class="section__sub">Si todavía no sabés qué necesitás, arrancá por el diagnóstico. Si ya tenés una duda concreta y querés resolverla hoy, reservá una sesión.</p>
-        </header>
-        <div class="offers">
-          <article class="offer reveal">
-            <p class="offer__label">Diagnóstico</p>
-            <p class="offer__price">Sin costo</p>
-            <p class="offer__time">20 a 30 minutos · videollamada</p>
-            <ul class="checks">
-              <li>Entendemos tu negocio y cómo vendés hoy</li>
-              <li>Detectamos dónde se pierde la plata</li>
-              <li>Te digo si puedo ayudarte y cómo</li>
-            </ul>
-            <a href="#contacto" class="btn btn--ghost btn--block" data-track="schedule">Agendar diagnóstico</a>
-          </article>
-
-          <article class="offer offer--featured reveal">
-            <span class="badge">Resolvés en el día</span>
-            <p class="offer__label">Sesión de consultoría SALT</p>
-            <p class="offer__price">$40.000 <small>ARS</small></p>
-            <p class="offer__time">60 minutos · videollamada · pago por adelantado</p>
-            <ul class="checks">
-              <li>Revisamos en vivo tu cuenta de Meta, tu web o tu CRM</li>
-              <li>Respuestas concretas a tus dudas, sin vueltas</li>
-              <li>Resumen escrito con las acciones priorizadas</li>
-            </ul>
-            <div class="offer__steps">
-              <a href="#" class="btn btn--primary btn--block" data-pay="mp" data-track="checkout">1. Pagar con Mercado Pago</a>
-              <a href="#" class="btn btn--ghost btn--block" data-pay="cal" data-track="schedule">2. Elegir día y horario</a>
-            </div>
-            <p class="offer__note">¿Estás fuera de Argentina? <a href="https://wa.me/5493512166870?text=Hola%20Carlos%2C%20quiero%20una%20sesi%C3%B3n%20de%20consultor%C3%ADa%20desde%20el%20exterior." target="_blank" rel="noopener" data-track="whatsapp">Escribime</a> y te paso el valor en dólares.</p>
-          </article>
-        </div>
       </div>
     </section>
 
@@ -406,6 +373,47 @@
           <li><b>VALY</b><span>IA y automatización</span></li>
           <li><b>Polaris</b><span>Mercado Libre y ecommerce</span></li>
         </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONSULTORÍA / PRECIOS ============ -->
+    <section class="section section--offer" id="consultoria">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">Cómo empezar</p>
+          <h2>Dos formas de <em>trabajar conmigo</em></h2>
+          <p class="section__sub">Si todavía no sabés qué necesitás, arrancá por el diagnóstico. Si ya tenés una duda concreta y querés resolverla hoy, reservá una sesión.</p>
+        </header>
+        <div class="offers">
+          <article class="offer reveal">
+            <p class="offer__label">Diagnóstico</p>
+            <p class="offer__price">Sin costo</p>
+            <p class="offer__time">20 a 30 minutos · videollamada</p>
+            <ul class="checks">
+              <li>Entendemos tu negocio y cómo vendés hoy</li>
+              <li>Detectamos dónde se pierde la plata</li>
+              <li>Te digo si puedo ayudarte y cómo</li>
+            </ul>
+            <a href="#contacto" class="btn btn--ghost btn--block" data-track="schedule">Agendar diagnóstico</a>
+          </article>
+
+          <article class="offer offer--featured reveal">
+            <span class="badge">Resolvés en el día</span>
+            <p class="offer__label">Sesión de consultoría SALT</p>
+            <p class="offer__price">$40.000 <small>ARS</small></p>
+            <p class="offer__time">60 minutos · videollamada · pago por adelantado</p>
+            <ul class="checks">
+              <li>Revisamos en vivo tu cuenta de Meta, tu web o tu CRM</li>
+              <li>Respuestas concretas a tus dudas, sin vueltas</li>
+              <li>Resumen escrito con las acciones priorizadas</li>
+            </ul>
+            <div class="offer__steps">
+              <a href="https://mpago.la/24FvuCF" target="_blank" rel="noopener" class="btn btn--primary btn--block" data-pay="mp" data-track="checkout">1. Pagar con Mercado Pago</a>
+              <a href="https://calendar.app.google/4FckD9eohae8ZFkYA" target="_blank" rel="noopener" class="btn btn--ghost btn--block" data-pay="cal" data-track="schedule">2. Elegir día y horario</a>
+            </div>
+            <p class="offer__note">¿Estás fuera de Argentina? <a href="https://wa.me/5493512166870?text=Hola%20Carlos%2C%20quiero%20una%20sesi%C3%B3n%20de%20consultor%C3%ADa%20desde%20el%20exterior." target="_blank" rel="noopener" data-track="whatsapp">Escribime</a> y te paso el valor en dólares.</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -506,6 +514,14 @@
   <a class="wa-float" href="https://wa.me/5493512166870?text=Hola%20Carlos%2C%20vi%20tu%20web." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-track="whatsapp">
     <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7a.6.6 0 0 0 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c0-.2-.3-.3-.7-.5Z"/></svg>
   </a>
+
+  <!-- Barra de acción fija (sólo mobile). Aparece al pasar el hero y se oculta sobre el formulario. -->
+  <div class="mbar" id="mbar">
+    <a href="#contacto" class="btn btn--primary mbar__main" data-track="schedule">Pedí tu diagnóstico sin costo</a>
+    <a href="https://wa.me/5493512166870?text=Hola%20Carlos%2C%20vi%20tu%20web." class="mbar__wa" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-track="whatsapp">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7a.6.6 0 0 0 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c0-.2-.3-.3-.7-.5Z"/></svg>
+    </a>
+  </div>
 
   <script src="assets/js/main.js" defer></script>
 </body>
